@@ -48,36 +48,29 @@ function getNewCards(){
   }
 
 var bingoArray = [
-  "archery.svg",
-"badminton.svg",
-"basketball.svg",
-"boxing.svg",
-"climbing.svg",
-"cycling.svg",
-"diving.svg",
-"driving.svg",
-"football.svg",
-"golf.svg",
-"gymnastics.svg",
-"hang-gliding.svg",
-"hiking.svg",
-"hockey.svg",
-"horse-riding.svg",
-"ice-skating.svg",
-"karate.svg",
-"kayak.svg",
-"paddle-surf.svg",
-"rugby.svg",
-"running.svg",
-"sailing.svg",
-"skiing.svg",
-"surfing.svg",
-"swimming.svg",
-"table-tennis.svg",
-"tennis.svg",
-"weight-lifting.svg",
-"windsurfing.svg",
-"yoga.svg",
+  "belt.png",
+  "boots.png",
+  "cap.png",
+  "dress.png",
+  "flipflops.png",
+  "gloves.png",
+  "hat.png",
+  "hoodie.png",
+  "jacket.png",
+  "jeans.png",
+  "jumper.png",
+  "pyjamas.png",
+  "raincoat.png",
+  "sandals.png",
+  "scarf.png",
+  "shirt.png",
+  "shoe.png",
+  "skirt.png",
+  "socks.png",
+  "trainers.png",
+  "trousers.png",
+  "tshirt.png",
+  "umbrella.png",
 ];
 
 function shuffle(bingoArray) {
@@ -164,6 +157,7 @@ function shuffle(carrotArray) {
 }
 
 shuffle(bingoArray);
+console.log(bingoArray);
 var newArray = bingoArray.slice(0, 12);
 var blueArray = newArray;
 pastePics();
@@ -171,171 +165,279 @@ pastePics();
 var redArray = bingoArray;
 shuffle(redArray);
 var blueArray = redArray.slice(0, 12);
+console.log(redArray);
 pastePics1();
 
 var greenArray = bingoArray;
 shuffle(greenArray);
 var pinkArray = greenArray.slice(0, 12);
+console.log(greenArray);
 pastePics2();
 
 var blackArray = bingoArray;
 shuffle(blackArray);
 var whiteArray = blackArray.slice(0, 12);
+console.log(blackArray);
 pastePics3();
 
 var puceArray = bingoArray;
 shuffle(puceArray);
 var greyArray = puceArray.slice(0, 12);
+console.log(puceArray);
 pastePics4();
 
 var carrotArray = bingoArray;
 shuffle(carrotArray);
 var brownArray = carrotArray.slice(0, 12);
+console.log(carrotArray);
 pastePics5();
 
 function pastePics() {
-  document.getElementById("id1").innerHTML = `<img src="img/${newArray[0]}">`;
-  document.getElementById("id2").innerHTML = `<img src="img/${newArray[1]}">`;
-  document.getElementById("id3").innerHTML = `<img src="img/${newArray[2]}">`;
-  document.getElementById("id4").innerHTML = `<img src="img/${newArray[3]}">`;
-  document.getElementById("id5").innerHTML = `<img src="img/${newArray[4]}">`;
-  document.getElementById("id6").innerHTML = `<img src="img/${newArray[5]}">`;
-  document.getElementById("id7").innerHTML = `<img src="img/${newArray[6]}">`;
-  document.getElementById("id8").innerHTML = `<img src="img/${newArray[7]}">`;
-  document.getElementById("id9").innerHTML = `<img src="img/${newArray[8]}">`;
-  document.getElementById("id10").innerHTML = `<img src="img/${newArray[9]}">`;
-  document.getElementById("id11").innerHTML = `<img src="img/${newArray[10]}">`;
-  document.getElementById("id12").innerHTML = `<img src="img/${newArray[11]}">`;
+  document.getElementById(
+    "id1"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[0]}">`;
+  document.getElementById(
+    "id2"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[1]}">`;
+  document.getElementById(
+    "id3"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[2]}">`;
+  document.getElementById(
+    "id4"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[3]}">`;
+  document.getElementById(
+    "id5"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[4]}">`;
+  document.getElementById(
+    "id6"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[5]}">`;
+  document.getElementById(
+    "id7"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[6]}">`;
+  document.getElementById(
+    "id8"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[7]}">`;
+  document.getElementById(
+    "id9"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[8]}">`;
+  document.getElementById(
+    "id10"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[9]}">`;
+  document.getElementById(
+    "id11"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[10]}">`;
+  document.getElementById(
+    "id12"
+  ).innerHTML = `<img src="img/clothesbing/${newArray[11]}">`;
 }
 
 function pastePics1() {
-  document.getElementById("id13").innerHTML = `<img src="img/${blueArray[0]}">`;
-  document.getElementById("id14").innerHTML = `<img src="img/${blueArray[1]}">`;
-  document.getElementById("id15").innerHTML = `<img src="img/${blueArray[2]}">`;
-  document.getElementById("id16").innerHTML = `<img src="img/${blueArray[3]}">`;
-  document.getElementById("id17").innerHTML = `<img src="img/${blueArray[4]}">`;
-  document.getElementById("id18").innerHTML = `<img src="img/${blueArray[5]}">`;
-  document.getElementById("id19").innerHTML = `<img src="img/${blueArray[6]}">`;
-  document.getElementById("id20").innerHTML = `<img src="img/${blueArray[7]}">`;
-  document.getElementById("id21").innerHTML = `<img src="img/${blueArray[8]}">`;
-  document.getElementById("id22").innerHTML = `<img src="img/${blueArray[9]}">`;
+  document.getElementById(
+    "id13"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[0]}">`;
+  document.getElementById(
+    "id14"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[1]}">`;
+  document.getElementById(
+    "id15"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[2]}">`;
+  document.getElementById(
+    "id16"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[3]}">`;
+  document.getElementById(
+    "id17"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[4]}">`;
+  document.getElementById(
+    "id18"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[5]}">`;
+  document.getElementById(
+    "id19"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[6]}">`;
+  document.getElementById(
+    "id20"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[7]}">`;
+  document.getElementById(
+    "id21"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[8]}">`;
+  document.getElementById(
+    "id22"
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[9]}">`;
   document.getElementById(
     "id23"
-  ).innerHTML = `<img src="img/${blueArray[10]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[10]}">`;
   document.getElementById(
     "id24"
-  ).innerHTML = `<img src="img/${blueArray[11]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${blueArray[11]}">`;
 }
 function pastePics2() {
-  document.getElementById("id25").innerHTML = `<img src="img/${pinkArray[0]}">`;
-  document.getElementById("id26").innerHTML = `<img src="img/${pinkArray[1]}">`;
-  document.getElementById("id27").innerHTML = `<img src="img/${pinkArray[2]}">`;
-  document.getElementById("id28").innerHTML = `<img src="img/${pinkArray[3]}">`;
-  document.getElementById("id29").innerHTML = `<img src="img/${pinkArray[4]}">`;
-  document.getElementById("id30").innerHTML = `<img src="img/${pinkArray[5]}">`;
-  document.getElementById("id31").innerHTML = `<img src="img/${pinkArray[6]}">`;
-  document.getElementById("id32").innerHTML = `<img src="img/${pinkArray[7]}">`;
-  document.getElementById("id33").innerHTML = `<img src="img/${pinkArray[8]}">`;
-  document.getElementById("id34").innerHTML = `<img src="img/${pinkArray[9]}">`;
+  document.getElementById(
+    "id25"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[0]}">`;
+  document.getElementById(
+    "id26"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[1]}">`;
+  document.getElementById(
+    "id27"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[2]}">`;
+  document.getElementById(
+    "id28"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[3]}">`;
+  document.getElementById(
+    "id29"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[4]}">`;
+  document.getElementById(
+    "id30"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[5]}">`;
+  document.getElementById(
+    "id31"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[6]}">`;
+  document.getElementById(
+    "id32"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[7]}">`;
+  document.getElementById(
+    "id33"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[8]}">`;
+  document.getElementById(
+    "id34"
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[9]}">`;
   document.getElementById(
     "id35"
-  ).innerHTML = `<img src="img/${pinkArray[10]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[10]}">`;
   document.getElementById(
     "id36"
-  ).innerHTML = `<img src="img/${pinkArray[11]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${pinkArray[11]}">`;
 }
 function pastePics3() {
   document.getElementById(
     "id37"
-  ).innerHTML = `<img src="img/${whiteArray[0]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[0]}">`;
   document.getElementById(
     "id38"
-  ).innerHTML = `<img src="img/${whiteArray[1]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[1]}">`;
   document.getElementById(
     "id39"
-  ).innerHTML = `<img src="img/${whiteArray[2]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[2]}">`;
   document.getElementById(
     "id40"
-  ).innerHTML = `<img src="img/${whiteArray[3]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[3]}">`;
   document.getElementById(
     "id41"
-  ).innerHTML = `<img src="img/${whiteArray[4]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[4]}">`;
   document.getElementById(
     "id42"
-  ).innerHTML = `<img src="img/${whiteArray[5]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[5]}">`;
   document.getElementById(
     "id43"
-  ).innerHTML = `<img src="img/${whiteArray[6]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[6]}">`;
   document.getElementById(
     "id44"
-  ).innerHTML = `<img src="img/${whiteArray[7]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[7]}">`;
   document.getElementById(
     "id45"
-  ).innerHTML = `<img src="img/${whiteArray[8]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[8]}">`;
   document.getElementById(
     "id46"
-  ).innerHTML = `<img src="img/${whiteArray[9]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[9]}">`;
   document.getElementById(
     "id47"
-  ).innerHTML = `<img src="img/${whiteArray[10]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[10]}">`;
   document.getElementById(
     "id48"
-  ).innerHTML = `<img src="img/${whiteArray[11]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${whiteArray[11]}">`;
 }
 function pastePics4() {
-  document.getElementById("id49").innerHTML = `<img src="img/${greyArray[0]}">`;
-  document.getElementById("id50").innerHTML = `<img src="img/${greyArray[1]}">`;
-  document.getElementById("id51").innerHTML = `<img src="img/${greyArray[2]}">`;
-  document.getElementById("id52").innerHTML = `<img src="img/${greyArray[3]}">`;
-  document.getElementById("id53").innerHTML = `<img src="img/${greyArray[4]}">`;
-  document.getElementById("id54").innerHTML = `<img src="img/${greyArray[5]}">`;
-  document.getElementById("id55").innerHTML = `<img src="img/${greyArray[6]}">`;
-  document.getElementById("id56").innerHTML = `<img src="img/${greyArray[7]}">`;
-  document.getElementById("id57").innerHTML = `<img src="img/${greyArray[8]}">`;
-  document.getElementById("id58").innerHTML = `<img src="img/${greyArray[9]}">`;
+  document.getElementById(
+    "id49"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[0]}">`;
+  document.getElementById(
+    "id50"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[1]}">`;
+  document.getElementById(
+    "id51"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[2]}">`;
+  document.getElementById(
+    "id52"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[3]}">`;
+  document.getElementById(
+    "id53"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[4]}">`;
+  document.getElementById(
+    "id54"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[5]}">`;
+  document.getElementById(
+    "id55"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[6]}">`;
+  document.getElementById(
+    "id56"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[7]}">`;
+  document.getElementById(
+    "id57"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[8]}">`;
+  document.getElementById(
+    "id58"
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[9]}">`;
   document.getElementById(
     "id59"
-  ).innerHTML = `<img src="img/${greyArray[10]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[10]}">`;
   document.getElementById(
     "id60"
-  ).innerHTML = `<img src="img/${greyArray[11]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${greyArray[11]}">`;
 }
 function pastePics5() {
   document.getElementById(
     "id61"
-  ).innerHTML = `<img src="img/${brownArray[0]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[0]}">`;
   document.getElementById(
     "id62"
-  ).innerHTML = `<img src="img/${brownArray[1]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[1]}">`;
   document.getElementById(
     "id63"
-  ).innerHTML = `<img src="img/${brownArray[2]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[2]}">`;
   document.getElementById(
     "id64"
-  ).innerHTML = `<img src="img/${brownArray[3]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[3]}">`;
   document.getElementById(
     "id65"
-  ).innerHTML = `<img src="img/${brownArray[4]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[4]}">`;
   document.getElementById(
     "id66"
-  ).innerHTML = `<img src="img/${brownArray[5]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[5]}">`;
   document.getElementById(
     "id67"
-  ).innerHTML = `<img src="img/${brownArray[6]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[6]}">`;
   document.getElementById(
     "id68"
-  ).innerHTML = `<img src="img/${brownArray[7]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[7]}">`;
   document.getElementById(
     "id69"
-  ).innerHTML = `<img src="img/${brownArray[8]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[8]}">`;
   document.getElementById(
     "id70"
-  ).innerHTML = `<img src="img/${brownArray[9]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[9]}">`;
   document.getElementById(
     "id71"
-  ).innerHTML = `<img src="img/${brownArray[10]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[10]}">`;
   document.getElementById(
     "id72"
-  ).innerHTML = `<img src="img/${brownArray[11]}">`;
+  ).innerHTML = `<img src="img/clothesbing/${brownArray[11]}">`;
+}
+
+function printdiv() {
+  var headstr = "BINGO CARDS";
+  var footstr = "More bingo at www.esl-ology.com";
+  var newstr = document.getElementById("wrapper").innerHTML;
+  var oldstr = document.body.innerHTML;
+  document.body.innerHTML = headstr + newstr + footstr;
+  window.print();
+  document.body.innerHTML = oldstr;
+  return false;
+}
+
+//TOGGLE SIDEBAR
+
+const sideBar = document.getElementById("sidebar");
+
+function openSidebar() {
+  sideBar.classList.toggle("moveSidebar");
 }
 
